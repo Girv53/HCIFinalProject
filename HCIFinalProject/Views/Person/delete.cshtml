@@ -1,0 +1,23 @@
+﻿@model HCIFinalProject.Models.Person
+@{
+    ViewBag.Title = "delete";
+}
+
+<h2>delete</h2>
+
+<div class="form-horizontal">
+    <h4>Throw that dog in the johnson diggy dog?</h4>
+</div>
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Foshizzel" class="btn btn-default" />
+        </div>
+    </div>
+}
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
